@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Scripts -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+<!-- gallery pic -->
+<div class="row" id="gallery">
+    <div class="column" >
+        <li class="gallery-item" v-for="photo in photoInfo">
+            <img v-bind:src="photo.download_url" onclick="clickOnImage(this);"/>
+        </li>
+    </div>
+    <div class="item">
+<!--
+        <span class="author">{{ photo.author }}</span>
+        <span class="author">{{ photo.width }}</span>
+        <span class="author">{{ photo.height }}</span>-->
+        <img class="expend" id="expand">
+    </div>
+
+</div>
+<!-- Optional JavaScript -->
+<script src="js/main.js"></script>
+</body>
+</html>
+
+
+

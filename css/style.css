@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+.column {
+    float: left;
+    overflow-y: scroll;
+    height: 100vh;
+}
+.body{
+
+}
+.column .gallery-item img {
+    width: 200px;
+    height: 200px;
+}
+.expend{
+    max-width:100%;
+    height: 100vh;
+    position: absolute;
+}
